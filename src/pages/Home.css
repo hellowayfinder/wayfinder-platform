@@ -1,0 +1,230 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.home-header {
+  background: var(--surface);
+  border-bottom: 0.5px solid var(--border);
+  padding: 1rem 1rem 0.75rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.app-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+}
+
+.app-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 1px;
+}
+
+.feedback-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--accent);
+  background: var(--accent-light);
+  border-radius: var(--radius-pill);
+  padding: 6px 12px;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.feedback-btn:hover { background: var(--lavender-200); }
+
+.home-body {
+  padding: 1rem;
+  flex: 1;
+}
+
+/* Banners */
+.fallback-banner {
+  background: var(--amber-50);
+  color: var(--amber-600);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.fallback-banner code {
+  font-size: 11px;
+  background: rgba(0,0,0,0.06);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.error-banner {
+  background: var(--amber-50);
+  color: var(--amber-600);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+/* Search */
+.search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--surface);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0 12px;
+  margin-bottom: 12px;
+  box-shadow: var(--shadow-sm);
+}
+
+.search-icon {
+  color: var(--text-muted);
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 14px;
+  color: var(--text-primary);
+  padding: 11px 0;
+  min-width: 0;
+}
+
+.search-input::placeholder { color: var(--text-muted); }
+
+.search-clear {
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 50%;
+  transition: background 0.1s;
+}
+
+.search-clear:hover { background: var(--gray-100); }
+
+/* Filter pills */
+.filter-row {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 13px;
+  border-radius: var(--radius-pill);
+  border: 0.5px solid var(--border);
+  background: var(--surface);
+  color: var(--text-secondary);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.12s;
+  flex-shrink: 0;
+}
+
+.pill:hover {
+  border-color: var(--lavender-400);
+  color: var(--accent);
+}
+
+.pill-active {
+  background: var(--accent-light);
+  border-color: var(--lavender-400);
+  color: var(--accent);
+}
+
+/* Results count */
+.results-count {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  margin-top: 4px;
+}
+
+/* Skeleton loading */
+.skeleton-card {
+  background: var(--gray-100);
+  border-radius: var(--radius-lg);
+  height: 110px;
+  margin-bottom: 10px;
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.empty-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+.empty-sub {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* Recommend CTA */
+.recommend-cta {
+  margin-top: 2rem;
+  background: var(--accent-soft);
+  border: 0.5px solid var(--lavender-200);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.cta-text {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 9px 20px;
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+
+.cta-btn:hover { opacity: 0.88; }
