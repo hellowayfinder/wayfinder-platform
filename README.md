@@ -52,6 +52,10 @@ To make trusted special-needs support easier to discover through the power of pa
 
 ---
 
-## ❤️ Built by
+## 📚 Documentation
 
-**HappyHands World**
+Project documentation is available in the `/docs` folder.
+
+---
+
+## ❤️ Built with care by HappyHands World
