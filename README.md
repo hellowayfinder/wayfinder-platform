@@ -1,4 +1,4 @@
-# WayFinder Platform
+# WayFinder
 
 > Connecting families with trusted support.
 
@@ -10,9 +10,15 @@ The platform is designed to make finding support simple, transparent, and access
 
 ## ✨ Vision
 
-Finding the right support shouldn't be difficult.
+Finding the right support for a child with special needs shouldn't be difficult.
 
-WayFinder brings together trusted recommendations from families to help others discover providers with confidence.
+WayFinder helps families discover trusted therapists, centres and specialists through recommendations from other parents.
+
+---
+
+## 🎯 Mission
+
+To make trusted special-needs support easier to discover through the power of parent recommendations.
 
 ---
 
@@ -21,9 +27,8 @@ WayFinder brings together trusted recommendations from families to help others d
 - 🔍 Search providers
 - 📍 Browse by locality
 - 🧩 Browse by service
-- ⭐ Community trust badges
-- 💬 WhatsApp contact
-- 🗺️ Google Maps integration
+- 📄 Provider details
+- 💬 Recommend a provider
 
 ---
 
@@ -31,6 +36,7 @@ WayFinder brings together trusted recommendations from families to help others d
 
 - React
 - TypeScript
+- Vite
 - Tailwind CSS
 - Google Sheets
 - Google Forms

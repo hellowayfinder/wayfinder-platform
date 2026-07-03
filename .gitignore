@@ -32,3 +32,7 @@ Thumbs.db
 
 # Replit
 .upm/
+.replit.history
+
+# Misc
+*.tmp
