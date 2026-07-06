@@ -74,7 +74,7 @@ export default function Home({
         <div className="header-top">
           <div>
             <h1 className="app-name">WayFinder</h1>
-            <p className="app-sub">Special needs providers · Chennai</p>
+            <p className="app-sub">Find trusted support in Chennai</p>
           </div>
           <Link
             to="/feedback"
@@ -141,7 +141,7 @@ export default function Home({
           <input
             type="search"
             className="search-input"
-            placeholder="Search by name, therapy type, condition…"
+            placeholder="Search by name, therapy or location..."
             value={search}
             onChange={handleSearch}
             aria-label="Search providers"
@@ -170,7 +170,7 @@ export default function Home({
             className={`pill ${!activeService ? "pill-active" : ""}`}
             onClick={() => handleService("")}
           >
-            All services
+            All therapies
           </button>
           {services.map((s) => (
             <button
@@ -189,7 +189,7 @@ export default function Home({
             className={`pill ${!activeLocality ? "pill-active" : ""}`}
             onClick={() => handleLocality("")}
           >
-            All areas
+            All locations
           </button>
           {localities.map((l) => (
             <button
@@ -205,7 +205,7 @@ export default function Home({
         <p className="results-count">
           {loading
             ? "Loading providers…"
-            : `${filtered.length} provider${filtered.length !== 1 ? "s" : ""} found`}
+            : `${filtered.length} result${filtered.length !== 1 ? "s" : ""}`}
         </p>
 
         {/* Provider list */}
@@ -217,7 +217,7 @@ export default function Home({
           </div>
         ) : filtered.length === 0 ? (
           <div className="empty-state">
-            <p className="empty-title">No providers found</p>
+            <p className="empty-title">No results found</p>
             <p className="empty-sub">
               Try a different search or remove a filter.
             </p>
@@ -232,14 +232,14 @@ export default function Home({
 
         {/* Recommend CTA */}
         <div className="recommend-cta">
-          <p className="cta-text">Know a great provider not listed here?</p>
+          <p className="cta-text">Know a great therapist not listed here?</p>
           <a
-            href="YOUR_FORM_1_LINK"
+            href="https://forms.gle/iESfoevWFXaXQ9JT9"
             target="_blank"
             rel="noopener noreferrer"
             className="cta-btn"
           >
-            Recommend a provider
+            Share a Recommendation
           </a>
         </div>
       </div>
